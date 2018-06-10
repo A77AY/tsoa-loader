@@ -1,0 +1,40 @@
+{
+  "name": "tsoa-loader",
+  "description": "TSOA Webpack Loader",
+  "keywords": [
+    "tsoa",
+    "webpack",
+    "loader",
+    "swagger",
+    "openapi"
+  ],
+  "version": "0.1.2-alpha",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Rinat Arsaev",
+    "email": "krickray@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/KrickRay/tsoa-loader"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "webpack --config tests/webpack.config --mode development",
+    "test-watch": "webpack --config tests/webpack.config --watch --mode development"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "tsoa": "^2.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.2",
+    "express": "^4.16.3",
+    "ts-loader": "^4.4.1",
+    "typescript": "^2.9.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  }
+}
