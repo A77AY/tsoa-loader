@@ -20,7 +20,7 @@ module.exports = {
   },
   resolveLoader: {
     alias: {
-      "tsoa-loader": path.join(__dirname, "../lib/loader.js")
+      "tsoa-loader": path.join(__dirname, "../lib/index.js")
     }
   },
   resolve: {
